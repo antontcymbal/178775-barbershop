@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -39,52 +40,58 @@
       <h1>Средства для ухода</h1>
       <ul class="breadcrumbs">
         <li>
-          <a href="..">Главная</a>
+          <a href="#">Главная</a>
         </li>
         <li>
-          <a href="../shop">Магазин</a>
+          <a href="#">Магазин</a>
         </li>
         <li class="active">
           Средства для ухода
         </li>
       </ul>
 
-      <h2>Производители</h2>
+      <form action="http://echo.htmlacademy.ru" method="get">
 
-      <input type="checkbox" name="manufacturers[]" value="Baxter of California" id="MrNatty" checked>
-      <label for="baxter-of-california">Baxter of California</label>
+      <div class="formColumn">
+        <div class="formTitle">Производители</div>
+          <input type="checkbox" name="manufacturers[]" value="Baxter of California" id="MrNatty" checked>
+          <label for="baxter-of-california">Baxter of California</label>
 
-      <input type="checkbox" name="manufacturers[]" value="Mr Natty" id="MrNatty">
-      <label for="MrNatty">Mr Natty</label>
+          <input type="checkbox" name="manufacturers[]" value="Mr Natty" id="MrNatty">
+          <label for="MrNatty">Mr Natty</label>
 
-      <input type="checkbox" name="manufacturers[]" value="Suavecito" id="Suavecito" checked>
-      <label for="Suavecito">Suavecito</label>
+          <input type="checkbox" name="manufacturers[]" value="Suavecito" id="Suavecito" checked>
+          <label for="Suavecito">Suavecito</label>
 
-      <input type="checkbox" name="manufacturers[]" value="Malin+Goetz" id="Malin+Goetz">
-      <label for="Malin+Goetz">Malin+Goetz</label>
+          <input type="checkbox" name="manufacturers[]" value="Malin+Goetz" id="Malin+Goetz">
+          <label for="Malin+Goetz">Malin+Goetz</label>
 
-      <input type="checkbox" name="manufacturers[]" value="Murray's" id="Murray's">
-      <label for="Murray's">Murray's</label>
+          <input type="checkbox" name="manufacturers[]" value="Murray's" id="Murray's">
+          <label for="Murray's">Murray's</label>
 
-      <input type="checkbox" name="manufacturers[]" value="American crew" id="AmericanСrew" checked>
-      <label for="AmericanСrew">American crew</label>
-
-
-
-      <h2>Группы товаров</h2>
-
-      <input type="radio" name="groups" value="shave" id="shave">
-      <label for="shave"> Бритвенные принадлежности </label>
-
-      <input type="radio" name="groups" value="care" id="care" checked>
-      <label for="shave"> Средства для ухода </label>
-
-      <input type="radio" name="groups" value="access" id="access">
-      <label for="shave"> Аксессуары </label>
+          <input type="checkbox" name="manufacturers[]" value="American crew" id="AmericanСrew" checked>
+          <label for="AmericanСrew">American crew</label>
+        </div>
+      </div>
 
 
 
-        <button class="btn">Показать</button>
+      <div class="formColumn">
+        <div class="formTitle">Группы товаров</div>
+          <input type="radio" name="groups" value="shave" id="shave">
+          <label for="shave"> Бритвенные принадлежности </label>
+
+          <input type="radio" name="groups" value="care" id="care" checked>
+          <label for="shave"> Средства для ухода </label>
+
+          <input type="radio" name="groups" value="access" id="access">
+          <label for="shave"> Аксессуары </label>
+        </div>
+      </div>
+
+      <button class="btn" type="submit">Показать</button>
+
+      </form>
 
         <div class="catalogItems">
           <section class="item">
